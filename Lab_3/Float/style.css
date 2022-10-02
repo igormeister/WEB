@@ -1,0 +1,22 @@
+.header{
+width: 100%;
+height: 349px;
+background-color: blue;
+}
+
+
+.content{
+    float: left;
+    width: 75%;
+    background-color: green;
+    height: 89vh;
+}
+.image{
+    float: right;
+    width: 25%;
+
+}
+.footer{
+    width: 100%;
+    height: 349px;
+}

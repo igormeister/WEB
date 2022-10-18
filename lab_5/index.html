@@ -14,13 +14,13 @@
     <div class="data">
         <h2>Форма для заповнення</h2>
         <h2>Введені дані</h2>
-        <input type="text" class="form" placeholder="ПІБ" id="PIB" onkeyup="check()" required>
+        <input type="text" class="form" placeholder="ПІБ" id="PIB" onkeyup="check()" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}\s[A-Za-zА-Яа-яЁёІіЇїЄє]{1}.\s[A-Za-zА-Яа-яЁёІіЇїЄє]{1}." required>
         <h3 id="name"></h3>
-        <input type="text" class="form" placeholder="Группа" id="groups" onkeyup="check()" required>
+        <input type="text" class="form" placeholder="Группа" id="groups" onkeyup="check()" pattern="[A-Z]{2}-[0-9]{2}" required>
         <h3 id="group"></h3>
-        <input type="text" class="form" placeholder="Телефон" id="telephone" onkeyup="check()" pattern="\+38[0-9]{10}" required>
+        <input type="text" class="form" placeholder="Телефон" id="telephone" onkeyup="check()" pattern="\({1}[0-9]{3}\){1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
         <h3 id="tel"></h3>
-        <input type="text" class="form" placeholder="Адреса" id="adresss" onkeyup="check()" required>
+        <input type="text" class="form" placeholder="Адреса" id="address" onkeyup="check()" pattern="м.\s[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}" required>
         <h3 id="adress"></h3>
         <input type="email" class="form" placeholder="Email" id="mail" onkeyup="check()" required>
         <h3 id="Email"></h3>

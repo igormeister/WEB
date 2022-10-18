@@ -14,14 +14,11 @@
     flex: 35%;
 }
 
-#mail:invalid
+.form:invalid
 {
     border-color: red;
 }
-#telephone:invalid
-{
-    border-color: red;
-}
+
 h2
 {
     flex: 50%;

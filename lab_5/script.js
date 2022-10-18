@@ -2,18 +2,18 @@ function check(){
     var PIB = document.getElementById("PIB").value
     var groups =document.getElementById("groups").value
     var telephone = document.getElementById("telephone").value
-    var adresss = document.getElementById("adresss").value
+    var adresss = document.getElementById("address").value
     var mail = document.getElementById("mail").value
     var btn = document.querySelector(".btn")
-    if(document.getElementById("telephone").checkValidity() && document.getElementById("mail").checkValidity()){
-        if (PIB.length != 0 && groups.length !=0 && telephone.length !=0 && adresss.length !=0 && mail.length !=0){
+    if(document.getElementById("telephone").checkValidity() && document.getElementById("mail").checkValidity() && document.getElementById("PIB").checkValidity() && document.getElementById("groups").checkValidity() && document.getElementById("address").checkValidity()){
             btn.removeAttribute('disabled');
-        }else{
-            btn.setAttribute('disabled', true);
-        }   
     }else{
+        btn.setAttribute('disabled', true);
         document.getElementById("tel").innerHTML = "Uncorrect telephone number"
         document.getElementById("Email").innerHTML = "Uncorrect Email adress"
+        document.getElementById("name").innerHTML = "Uncorrect form of username"
+        document.getElementById("group").innerHTML = "Uncorrect form of group"
+        document.getElementById("adress").innerHTML = "Uncorrect form of adress"
     }
 }
 function enter()
@@ -24,7 +24,7 @@ function enter()
     document.getElementById("tel").innerHTML = elementList[2]
     document.getElementById("adress").innerHTML = elementList[3]
     document.getElementById("Email").innerHTML = elementList[4]
-    let validElementList = ["Шерстюк Ігор Олександрович","IS-91","+380939448649","Деміївська 37,кв 14","example@gmail.com"]
+    let validElementList = ["Шерстюк І. О.","IS-91","(093)-944-86-49","м. Київ","example@gmail.com"]
     let idList = ["name","group","tel","adress","Email"]
     for(let i=0; i < elementList.length; i++){
         if(elementList[i] != validElementList[i]){

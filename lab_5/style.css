@@ -1,0 +1,51 @@
+.data
+{
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form
+{
+    margin: 1.5px;
+    border-radius: 10px;
+    flex: 35%;
+}
+
+#mail:invalid
+{
+    border-color: red;
+}
+#telephone:invalid
+{
+    border-color: red;
+}
+h2
+{
+    flex: 50%;
+}
+h3
+{
+    flex: 35%;
+}
+.btn
+{
+    flex: 35%;
+    border-radius: 10px;
+}
+
+table.GeneratedTable {
+    width: 15%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+}
+
+table.GeneratedTable td
+{
+    border-width: 1px;
+    border-style: solid;
+}

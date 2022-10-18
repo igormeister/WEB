@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шерстюк І. О. ІС-91,Лабораторна робота №1,варіант №85</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="data">
+        <h2>Форма для заповнення</h2>
+        <h2>Введені дані</h2>
+        <input type="text" class="form" placeholder="ПІБ" id="PIB" onkeyup="check()" required>
+        <h3 id="name"></h3>
+        <input type="text" class="form" placeholder="Группа" id="groups" onkeyup="check()" required>
+        <h3 id="group"></h3>
+        <input type="text" class="form" placeholder="Телефон" id="telephone" onkeyup="check()" pattern="\+38[0-9]{10}" required>
+        <h3 id="tel"></h3>
+        <input type="text" class="form" placeholder="Адреса" id="adresss" onkeyup="check()" required>
+        <h3 id="adress"></h3>
+        <input type="email" class="form" placeholder="Email" id="mail" onkeyup="check()" required>
+        <h3 id="Email"></h3>
+        <button class="btn" disabled onclick="enter()">Submit</button>
+        <h3 id="Error"></h3>
+    </div>
+    <div class="table">
+        <label>
+            <p>Колір фона:&nbsp<input type="color" id="back"></p>
+        </label>
+        <label>
+            <p>Колір тексту:&nbsp<input type="color" id="style"></p>
+        </label>
+        <table class="GeneratedTable">
+            <tbody>
+                <tr>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-1 row-1">1</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-1">2</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-1">3</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-1">4</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-1">5</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-1">6</td>
+                </tr>
+                <tr>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-1 row-2">7</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-2">8</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-2">9</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-2">10</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-2">11</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-2">12</td>
+                </tr>
+                <tr>
+                    <td onMouseOver ="randomColor(this.id)" onMouseOut="backColor(this.id)" ondblclick="tab(id)" onclick="getColor(this.id)" id="col-1 row-3">13</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-3">14</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-3">15</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-3">16</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-3">17</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-3">18</td>
+                </tr>
+                <tr>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-1 row-4">19</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-4">20</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-4">21</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-4">22</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-4">23</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-4">24</td>
+                </tr>
+                <tr>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-1 row-5">25</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-5">26</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-5">27</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-5">28</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-5">29</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-5">30</td>
+                </tr>
+                <tr>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-1 row-6">31</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-2 row-6">32</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-3 row-6">33</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-4 row-6">34</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-5 row-6">35</td>
+                    <td onclick="getColor(this.id)" ondblclick="tab(id)" id="col-6 row-6">36</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

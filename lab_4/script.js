@@ -1,14 +1,14 @@
 function changeColor()
 {
     var element = document.getElementById("first");
-    r = Math.floor(Math.random() * (256));
-    g = Math.floor(Math.random() * (256));
-    b = Math.floor(Math.random() * (256));
-    tr = Math.floor(Math.random() * (256));
-    tg = Math.floor(Math.random() * (256));
-    tb = Math.floor(Math.random() * (256));
-    color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
-    colorText = '#' + tr.toString(16) + tg.toString(16) + tb.toString(16);
+    let r = Math.floor(Math.random() * (256));
+    let g = Math.floor(Math.random() * (256));
+    let b = Math.floor(Math.random() * (256));
+    let tr = Math.floor(Math.random() * (256));
+    let tg = Math.floor(Math.random() * (256));
+    let tb = Math.floor(Math.random() * (256));
+    let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+    let colorText = '#' + tr.toString(16) + tg.toString(16) + tb.toString(16);
     element.style.background = color;
     element.style.color = colorText;
 }
@@ -16,14 +16,14 @@ function changeColor()
 function changeColorQuery() 
 {
     var element = document.querySelector("li.select");
-    r = Math.floor(Math.random() * (256));
-    g = Math.floor(Math.random() * (256));
-    b = Math.floor(Math.random() * (256));
-    tr = Math.floor(Math.random() * (256));
-    tg = Math.floor(Math.random() * (256));
-    tb = Math.floor(Math.random() * (256));
-    color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
-    colorText = '#' + tr.toString(16) + tg.toString(16) + tb.toString(16);
+    let r = Math.floor(Math.random() * (256));
+    let g = Math.floor(Math.random() * (256));
+    let b = Math.floor(Math.random() * (256));
+    let tr = Math.floor(Math.random() * (256));
+    let tg = Math.floor(Math.random() * (256));
+    let tb = Math.floor(Math.random() * (256));
+    let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+    let colorText = '#' + tr.toString(16) + tg.toString(16) + tb.toString(16);
     element.style.background = color;
     element.style.color = colorText;
 }
